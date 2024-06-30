@@ -25,7 +25,9 @@ remarque 2 : cette solution se base sur le faite qu'une base de données MYSQL e
 - Dans la premiére solution via la ligne de commande pour lancer les Job il suffit de se positionner dans le dossier "Job_in_CLI_and_scheduled/Main_Job" puis d'executer un des fichiers ./Main_Job_run.ps1 ou ./Main_Job_run.sh ou ./Main_Job_run.bat selon votre préférence
 - Dans la deuxiéme solution dans le dossier "Job_in_Container" la création de la base de données + le lancement des jobs Talend ce fait via ses commandes :
           ```
-          $ docker build -t talend-job:latest .  
+          $ docker build -t talend-job:latest .
+          ```
+          ```
           $ docker compose up -d --build
           ```
 - remarque si un des ficheirs ne s'execute pas veuillez lui donnez les droits avec cette commande "chmod +x Main_Job_run.*" 
