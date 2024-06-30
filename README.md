@@ -16,7 +16,9 @@ remarque 2 : cette solution se base sur le faite qu'une base de données MYSQL e
 
 - Dossier "Job_in_Container" : Solution 2 : qui regroupe des dossier et fichiers nécessaires (docker_compose.yml, DockerFile , Main_Job_0.1.zip, schema.sql) au deploiment et éxecution des Jobs via des conteneurs Docker.
 
-- Dossier ETUDE_DE_CAS_TALEND : ce dossier regroupe le projet en entier est permet de l'importer via 'Talend data integration studio'  
+- Dossier ETUDE_DE_CAS_TALEND : ce dossier regroupe le projet en entier est permet de l'importer via 'Talend data integration studio'
+
+- un Dashboard power bi de notre analyse des besoins présent dans l'énoncé  
 
 # Comment éxecuter
 - importer le projet dans le local avec 'git clone' 
