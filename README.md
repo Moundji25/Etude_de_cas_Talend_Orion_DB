@@ -1,4 +1,4 @@
-#Groupe 6 :
+# Groupe 6 :
 
 Team : 
 - Hajar EL HAFA 
@@ -8,7 +8,7 @@ Team :
 - Reda KAMEL 
 - Wilfried KAMAHA MONKAM
 
-#Description du contenu
+# Description du contenu
 - Dossier "Job_in_CLI_scheduled" : Solution 1 : qui regroupe des dossier contenant les dépendances et executables (fichier .jar , .sh, .ps1, .bat ...) nécessaire à l'execution des Jobs sur la ligne de commande.
 
 remarque 1 : le fichier "schedule_talend_job.ps1" permet de planifier l'execution des Jobs (chaque jours à 23h06).
@@ -18,7 +18,7 @@ remarque 2 : cette solution se base sur le faite qu'une base de données MYSQL e
 
 - Dossier ETUDE_DE_CAS_TALEND : ce dossier regroupe le projet en entier est permet de l'importer via 'Talend data integration studio'  
 
-#Comment éxecuter
+# Comment éxecuter
 - importer le projet dans le local avec 'git clone' 
 - Si le Job ne s'execute pas sur les deux versions (incompatibilité, ... ) alors est il possible d'importer le projet ETUDE_DE_CAS_TALEND avec 'Talend data integration studio' et modifier le contexte ou autres données de configuration.
 - Afin d'avoir une execution sans erreurs (fichiers non reconnues) les fichiers de données (fichiers présent dans le dossier 'Job_in_CLI_scheduled/Data' .txt et .csv, .xlsx) doit impérativement etre présents dans ce dossier 'C:\ETUDE_DE_CAS_TALEND\Data"
