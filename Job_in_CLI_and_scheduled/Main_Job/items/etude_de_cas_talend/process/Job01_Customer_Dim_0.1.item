@@ -1,0 +1,827 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="DB_orion_Port" prompt="DB_orion_Port?" promptNeeded="false" repositoryContextId="_I4kMUDPrEe-fbLVDKLaNlg" type="id_String" value="3306"/>
+    <contextParameter comment="" name="DB_orion_Password" prompt="DB_orion_Password?" promptNeeded="false" repositoryContextId="_I4kMUDPrEe-fbLVDKLaNlg" type="id_Password" value="enc:system.encryption.key.v1:uoorGxwaIcM+NX37Nk90i8A15M8eivSS4YaVs6Wy/RNLLDMg/A=="/>
+    <contextParameter comment="" name="DB_orion_Database" prompt="DB_orion_Database?" promptNeeded="false" repositoryContextId="_I4kMUDPrEe-fbLVDKLaNlg" type="id_String" value="Orion_db"/>
+    <contextParameter comment="" name="DB_orion_Server" prompt="DB_orion_Server?" promptNeeded="false" repositoryContextId="_I4kMUDPrEe-fbLVDKLaNlg" type="id_String" value="localhost"/>
+    <contextParameter comment="" name="DB_orion_AdditionalParams" prompt="DB_orion_AdditionalParams?" promptNeeded="false" repositoryContextId="_I4kMUDPrEe-fbLVDKLaNlg" type="id_String" value="noDatetimeStringSync=true"/>
+    <contextParameter comment="" name="DB_orion_Login" prompt="DB_orion_Login?" promptNeeded="false" repositoryContextId="_I4kMUDPrEe-fbLVDKLaNlg" type="id_String" value="root"/>
+    <contextParameter comment="" name="DB_orion1_Server" prompt="DB_orion1_Server?" promptNeeded="false" repositoryContextId="_Ed4QoDbTEe-Wmon6yxRYqQ" type="id_String" value="172.29.0.2"/>
+    <contextParameter comment="" name="DB_orion1_Login" prompt="DB_orion1_Login?" promptNeeded="false" repositoryContextId="_Ed4QoDbTEe-Wmon6yxRYqQ" type="id_String" value="root"/>
+    <contextParameter comment="" name="DB_orion1_Port" prompt="DB_orion1_Port?" promptNeeded="false" repositoryContextId="_Ed4QoDbTEe-Wmon6yxRYqQ" type="id_String" value="3306"/>
+    <contextParameter comment="" name="DB_orion1_Password" prompt="DB_orion1_Password?" promptNeeded="false" repositoryContextId="_Ed4QoDbTEe-Wmon6yxRYqQ" type="id_Password" value="enc:system.encryption.key.v1:4aaLiywz9LH5ioa9gbXWmaYq3tyDJGYPlNp90qSs+CToi/5ZsA=="/>
+    <contextParameter comment="" name="DB_orion1_AdditionalParams" prompt="DB_orion1_AdditionalParams?" promptNeeded="false" repositoryContextId="_Ed4QoDbTEe-Wmon6yxRYqQ" type="id_String" value="noDatetimeStringSync=true"/>
+    <contextParameter comment="" name="DB_orion1_Database" prompt="DB_orion1_Database?" promptNeeded="false" repositoryContextId="_Ed4QoDbTEe-Wmon6yxRYqQ" type="id_String" value="Orion_db"/>
+  </context>
+  <context confirmationNeeded="false" name="Prod">
+    <contextParameter comment="" name="DB_orion_Port" prompt="DB_orion_Port?" promptNeeded="false" repositoryContextId="_I4kMUDPrEe-fbLVDKLaNlg" type="id_String" value="3306"/>
+    <contextParameter comment="" name="DB_orion_Password" prompt="DB_orion_Password?" promptNeeded="false" repositoryContextId="_I4kMUDPrEe-fbLVDKLaNlg" type="id_Password" value="enc:system.encryption.key.v1:DNC+Dgs0CMvFp4rUBc3uiGrfvi0zrsb9lSUpqZ72NuFxvg6bMQ=="/>
+    <contextParameter comment="" name="DB_orion_Database" prompt="DB_orion_Database?" promptNeeded="false" repositoryContextId="_I4kMUDPrEe-fbLVDKLaNlg" type="id_String" value="Orion_db"/>
+    <contextParameter comment="" name="DB_orion_Server" prompt="DB_orion_Server?" promptNeeded="false" repositoryContextId="_I4kMUDPrEe-fbLVDKLaNlg" type="id_String" value="container_edc_PMN_talend:3306"/>
+    <contextParameter comment="" name="DB_orion_AdditionalParams" prompt="DB_orion_AdditionalParams?" promptNeeded="false" repositoryContextId="_I4kMUDPrEe-fbLVDKLaNlg" type="id_String" value="noDatetimeStringSync=true"/>
+    <contextParameter comment="" name="DB_orion_Login" prompt="DB_orion_Login?" promptNeeded="false" repositoryContextId="_I4kMUDPrEe-fbLVDKLaNlg" type="id_String" value="root"/>
+    <contextParameter comment="" name="DB_orion1_Server" prompt="DB_orion1_Server?" promptNeeded="false" repositoryContextId="_Ed4QoDbTEe-Wmon6yxRYqQ" type="id_String" value="172.29.0.2"/>
+    <contextParameter comment="" name="DB_orion1_Login" prompt="DB_orion1_Login?" promptNeeded="false" repositoryContextId="_Ed4QoDbTEe-Wmon6yxRYqQ" type="id_String" value="root"/>
+    <contextParameter comment="" name="DB_orion1_Port" prompt="DB_orion1_Port?" promptNeeded="false" repositoryContextId="_Ed4QoDbTEe-Wmon6yxRYqQ" type="id_String" value="3306"/>
+    <contextParameter comment="" name="DB_orion1_Password" prompt="DB_orion1_Password?" promptNeeded="false" repositoryContextId="_Ed4QoDbTEe-Wmon6yxRYqQ" type="id_Password" value="enc:system.encryption.key.v1:/otxK4FbpgguRaNajFGw8uiuA9SkV/cFdMo+RS0OPm6WJcPb0w=="/>
+    <contextParameter comment="" name="DB_orion1_AdditionalParams" prompt="DB_orion1_AdditionalParams?" promptNeeded="false" repositoryContextId="_Ed4QoDbTEe-Wmon6yxRYqQ" type="id_String" value="noDatetimeStringSync=true"/>
+    <contextParameter comment="" name="DB_orion1_Database" prompt="DB_orion1_Database?" promptNeeded="false" repositoryContextId="_Ed4QoDbTEe-Wmon6yxRYqQ" type="id_String" value="Orion_db"/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:T/QcSZj0PdqAAhT1+tdcPnYZ9jToPPFczolJDOVm" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Program Files/TOS_DI-Win32-20200219_1130-V7.3.1/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tJDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_12" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:dfjXcpG4aSYwvfLG8NxOaGiqqf6aWW8GXPFNF1jw" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <routinesParameter id="_gT1IMC-eEe-AeeAohn1FGA" name="DataOperation"/>
+    <routinesParameter id="_gUU3cC-eEe-AeeAohn1FGA" name="Mathematical"/>
+    <routinesParameter id="_gUa-EC-eEe-AeeAohn1FGA" name="Numeric"/>
+    <routinesParameter id="_gUf2kC-eEe-AeeAohn1FGA" name="Relational"/>
+    <routinesParameter id="_gUlWIC-eEe-AeeAohn1FGA" name="StringHandling"/>
+    <routinesParameter id="_gUq1sC-eEe-AeeAohn1FGA" name="TalendDataGenerator"/>
+    <routinesParameter id="_gUwVQC-eEe-AeeAohn1FGA" name="TalendDate"/>
+    <routinesParameter id="_gU1NwC-eEe-AeeAohn1FGA" name="TalendString"/>
+    <routinesParameter id="_gU7UYC-eEe-AeeAohn1FGA" name="TalendStringUtil"/>
+  </parameters>
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_innrkC-lEe-AeeAohn1FGA" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_innrkC-lEe-AeeAohn1FGA - customer" show="false"/>
+    <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;/ETUDE_DE_CAS_TALEND/Data/customer.csv&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="true"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;\&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HEADER" value="1"/>
+    <elementParameter field="TEXT" name="FOOTER" value="0"/>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="false"/>
+    <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_innrkC-lEe-AeeAohn1FGA - customer" show="false"/>
+    <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;C:/Program Files/TOS_DI-Win32-20200219_1130-V7.3.1/workspace&quot;" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="RANDOM" value="false" show="false"/>
+    <elementParameter field="TEXT" name="NB_RANDOM" value="10" show="false"/>
+    <elementParameter field="CHECK" name="TRIMALL" value="false"/>
+    <elementParameter field="TABLE" name="TRIMSELECT">
+      <elementValue elementRef="SCHEMA_COLUMN" value="_Customer_ID_"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_Country_"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_Gender_"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_Personal_ID_"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_Customer_Name_"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_Customer_FirstName_"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_Customer_LastName_"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_Birth_Date_"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_Customer_Address_"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_Street_ID_"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_Street_Number_"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_Customer_Type_ID_"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
+    <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
+    <elementParameter field="CHECK" name="SPLITRECORD" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DECODE" value="false"/>
+    <elementParameter field="TABLE" name="DECODE_COLS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="_Customer_ID_"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_Country_"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_Gender_"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_Personal_ID_"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_Customer_Name_"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_Customer_FirstName_"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_Customer_LastName_"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_Birth_Date_"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_Customer_Address_"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_Street_ID_"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_Street_Number_"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_Customer_Type_ID_"/>
+      <elementValue elementRef="DECODE" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="DESTINATION" value="" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="customer"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="customer" name="tFileInputDelimited_1">
+      <column comment="" key="false" length="5" name="_Customer_ID_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="_Country_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="_Gender_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="_Personal_ID_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="33" name="_Customer_Name_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="_Customer_FirstName_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="24" name="_Customer_LastName_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="_Birth_Date_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="36" name="_Customer_Address_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="_Street_ID_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="_Street_Number_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="_Customer_Type_ID_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="customer" name="REJECT">
+      <column comment="" key="false" length="5" name="_Customer_ID_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="_Country_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="_Gender_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="_Personal_ID_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="33" name="_Customer_Name_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="_Customer_FirstName_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="24" name="_Customer_LastName_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="_Birth_Date_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="36" name="_Customer_Address_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="_Street_ID_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="_Street_Number_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="_Customer_Type_ID_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="480" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_2" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_iRr0oC-hEe-AeeAohn1FGA-tMap_2-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="customer">
+      <column comment="" key="false" length="5" name="_Customer_ID_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="_Country_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="_Gender_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="_Personal_ID_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="33" name="_Customer_Name_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="_Customer_FirstName_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="24" name="_Customer_LastName_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Birth_date" nullable="false" pattern="" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="36" name="_Customer_Address_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="_Street_ID_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="_Street_Number_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="_Customer_Type_ID_" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables sizeState="INTERMEDIATE" name="Var">
+        <mapperTableEntries name="Birth_date" expression="row2._Birth_Date_ != null &amp;&amp; !row2._Birth_Date_.isEmpty() ? TalendDate.parseDate(&quot;dd/MM/yyyy HH:mm:ss&quot;, row2._Birth_Date_) : null " type="id_Date"/>
+        <mapperTableEntries name="_Customer_Type_ID_" expression="Integer.parseInt(  StringHandling.SUBSTR&#xD;&#xA;&#x9; (row2._Customer_Type_ID_, 0 , row2._Customer_Type_ID_.indexOf(&quot;,&quot;)  ) ) " type="id_Integer"/>
+      </varTables>
+      <outputTables sizeState="INTERMEDIATE" name="customer">
+        <mapperTableEntries name="_Customer_ID_" expression="row2._Customer_ID_ " type="id_String" nullable="true"/>
+        <mapperTableEntries name="_Country_" expression="row2._Country_ " type="id_String" nullable="true"/>
+        <mapperTableEntries name="_Gender_" expression="row2._Gender_ " type="id_String" nullable="true"/>
+        <mapperTableEntries name="_Personal_ID_" expression="row2._Personal_ID_ " type="id_String" nullable="true"/>
+        <mapperTableEntries name="_Customer_Name_" expression="row2._Customer_Name_ " type="id_String" nullable="true"/>
+        <mapperTableEntries name="_Customer_FirstName_" expression="row2._Customer_FirstName_ " type="id_String" nullable="true"/>
+        <mapperTableEntries name="_Customer_LastName_" expression="row2._Customer_LastName_ " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Birth_date" expression="Var.Birth_date " type="id_Date"/>
+        <mapperTableEntries name="_Customer_Address_" expression="row2._Customer_Address_ " type="id_String" nullable="true"/>
+        <mapperTableEntries name="_Street_ID_" expression="row2._Street_ID_ " type="id_String" nullable="true"/>
+        <mapperTableEntries name="_Street_Number_" expression="row2._Street_Number_ " type="id_String" nullable="true"/>
+        <mapperTableEntries name="_Customer_Type_ID_" expression="Var._Customer_Type_ID_ " type="id_Integer" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row2" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="_Customer_ID_" type="id_String" nullable="true"/>
+        <mapperTableEntries name="_Country_" type="id_String" nullable="true"/>
+        <mapperTableEntries name="_Gender_" type="id_String" nullable="true"/>
+        <mapperTableEntries name="_Personal_ID_" type="id_String" nullable="true"/>
+        <mapperTableEntries name="_Customer_Name_" type="id_String" nullable="true"/>
+        <mapperTableEntries name="_Customer_FirstName_" type="id_String" nullable="true"/>
+        <mapperTableEntries name="_Customer_LastName_" type="id_String" nullable="true"/>
+        <mapperTableEntries name="_Birth_Date_" type="id_String" nullable="true"/>
+        <mapperTableEntries name="_Customer_Address_" type="id_String" nullable="true"/>
+        <mapperTableEntries name="_Street_ID_" type="id_String" nullable="true"/>
+        <mapperTableEntries name="_Street_Number_" type="id_String" nullable="true"/>
+        <mapperTableEntries name="_Customer_Type_ID_" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="672" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_3" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_iRr0oC-hEe-AeeAohn1FGA-tMap_3-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="customer_dim">
+      <column comment="" key="true" length="5" name="_Customer_ID_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="_Country_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="28" name="_Customer_Group_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="41" name="_Customer_Type_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="_Gender_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Age_group" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Age" nullable="false" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="33" name="_Customer_Name_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="_Customer_FirstName_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="24" name="_Customer_LastName_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Birth_date" nullable="false" pattern="" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FLOW" label="Customer_Dim" name="output_bd">
+      <column comment="" key="true" length="10" name="Customer_ID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2" name="Customer_Country" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="40" name="Customer_Group" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="40" name="Customer_Type" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="Customer_Gender" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="12" name="Customer_Age_Group" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="Customer_Age" nullable="true" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="40" name="Customer_Name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="Customer_Fisrtname" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="Customer_Lastname" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="Customer_Birth_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables sizeState="INTERMEDIATE" name="Var">
+        <mapperTableEntries name="Age_group" expression="Var.Age &lt; 30 ? &quot;&lt;30 years&quot; :&#xD;&#xA;Var.Age &lt; 46 ? &quot;30-45 years&quot; :&#xD;&#xA;Var.Age &lt; 61 ? &quot;46-60 years&quot; :&#xD;&#xA;Var.Age &lt; 76 ? &quot;61-75 years&quot; :&#xD;&#xA;&quot;>75 years&quot; " type="id_String"/>
+        <mapperTableEntries name="Age" expression="Short.parseShort(&#xD;&#xA;&#xD;String.valueOf( Mathematical.INT(TalendDate.formatDate(&quot;yyyy&quot;,TalendDate.getCurrentDate())) - &#xA;Mathematical.INT(TalendDate.formatDate(&quot;yyyy&quot;,customer.Birth_date))&#xA;)&#xD;); " type="id_Short"/>
+      </varTables>
+      <outputTables sizeState="INTERMEDIATE" name="customer_dim">
+        <mapperTableEntries name="_Customer_ID_" expression="customer._Customer_ID_ " type="id_String" nullable="true"/>
+        <mapperTableEntries name="_Country_" expression="customer._Country_ " type="id_String" nullable="true"/>
+        <mapperTableEntries name="_Customer_Group_" expression="customer_type._Customer_Group_ " type="id_String" nullable="true"/>
+        <mapperTableEntries name="_Customer_Type_" expression="customer_type._Customer_Type_ " type="id_String" nullable="true"/>
+        <mapperTableEntries name="_Gender_" expression="customer._Gender_ " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Age_group" expression="Var.Age_group " type="id_String"/>
+        <mapperTableEntries name="Age" expression="Var.Age " type="id_Integer"/>
+        <mapperTableEntries name="_Customer_Name_" expression="customer._Customer_Name_ " type="id_String" nullable="true"/>
+        <mapperTableEntries name="_Customer_FirstName_" expression="customer._Customer_FirstName_ " type="id_String" nullable="true"/>
+        <mapperTableEntries name="_Customer_LastName_" expression="customer._Customer_LastName_ " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Birth_date" expression="customer.Birth_date " type="id_Date"/>
+      </outputTables>
+      <outputTables sizeState="INTERMEDIATE" name="output_bd">
+        <mapperTableEntries name="Customer_ID" expression="Integer.parseInt(  StringHandling.SUBSTR&#xD;&#xA;&#x9; (customer._Customer_ID_, 0 , customer._Customer_ID_.indexOf(&quot;,&quot;) ) ) " type="id_Integer"/>
+        <mapperTableEntries name="Customer_Country" expression="customer._Country_ " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Customer_Group" expression="customer_type._Customer_Group_ " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Customer_Type" expression="customer_type._Customer_Type_ " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Customer_Gender" expression="customer._Gender_ " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Customer_Age_Group" expression="Var.Age_group " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Customer_Age" expression="Var.Age " type="id_Short" nullable="true"/>
+        <mapperTableEntries name="Customer_Name" expression="customer._Customer_Name_ " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Customer_Fisrtname" expression="customer._Customer_FirstName_ " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Customer_Lastname" expression="customer._Customer_LastName_ " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Customer_Birth_Date" expression="customer.Birth_date " type="id_Date" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="customer" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="_Customer_ID_" type="id_String" nullable="true"/>
+        <mapperTableEntries name="_Country_" type="id_String" nullable="true"/>
+        <mapperTableEntries name="_Gender_" type="id_String" nullable="true"/>
+        <mapperTableEntries name="_Personal_ID_" type="id_String" nullable="true"/>
+        <mapperTableEntries name="_Customer_Name_" type="id_String" nullable="true"/>
+        <mapperTableEntries name="_Customer_FirstName_" type="id_String" nullable="true"/>
+        <mapperTableEntries name="_Customer_LastName_" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Birth_date" type="id_Date"/>
+        <mapperTableEntries name="_Customer_Address_" type="id_String" nullable="true"/>
+        <mapperTableEntries name="_Street_ID_" type="id_String" nullable="true"/>
+        <mapperTableEntries name="_Street_Number_" type="id_String" nullable="true"/>
+        <mapperTableEntries name="_Customer_Type_ID_" type="id_Integer" nullable="true"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="customer_type" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="_Customer_Type_ID_" expression="customer._Customer_Type_ID_ " type="id_Integer" nullable="true" operator="="/>
+        <mapperTableEntries name="_Customer_Type_" type="id_String" nullable="true"/>
+        <mapperTableEntries name="_Customer_Group_ID_" type="id_String" nullable="true"/>
+        <mapperTableEntries name="_Customer_Group_" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_4" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_k83hIC-kEe-AeeAohn1FGA" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_k83hIC-kEe-AeeAohn1FGA - customer_type" show="false"/>
+    <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;/ETUDE_DE_CAS_TALEND/Data/customer_type.csv&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="true"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;\&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;\&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HEADER" value="1"/>
+    <elementParameter field="TEXT" name="FOOTER" value="0"/>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="false"/>
+    <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_k83hIC-kEe-AeeAohn1FGA - customer_type" show="false"/>
+    <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;C:/Program Files/TOS_DI-Win32-20200219_1130-V7.3.1/workspace&quot;" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="RANDOM" value="false" show="false"/>
+    <elementParameter field="TEXT" name="NB_RANDOM" value="10" show="false"/>
+    <elementParameter field="CHECK" name="TRIMALL" value="false"/>
+    <elementParameter field="TABLE" name="TRIMSELECT">
+      <elementValue elementRef="SCHEMA_COLUMN" value="_Customer_Type_ID_"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_Customer_Type_"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_Customer_Group_ID_"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_Customer_Group_"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
+    <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="CUSTOM"/>
+    <elementParameter field="CHECK" name="SPLITRECORD" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DECODE" value="false"/>
+    <elementParameter field="TABLE" name="DECODE_COLS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="_Customer_Type_ID_"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_Customer_Type_"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_Customer_Group_ID_"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_Customer_Group_"/>
+      <elementValue elementRef="DECODE" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="DESTINATION" value="" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="customer_type"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="customer_type" name="tFileInputDelimited_4">
+      <column comment="" key="false" length="7" name="_Customer_Type_ID_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="41" name="_Customer_Type_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="_Customer_Group_ID_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="28" name="_Customer_Group_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="customer_type" name="REJECT">
+      <column comment="" key="false" length="7" name="_Customer_Type_ID_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="41" name="_Customer_Type_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="_Customer_Group_ID_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="28" name="_Customer_Group_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="448" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_iRr0oC-hEe-AeeAohn1FGA-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="customer_type">
+      <column comment="" key="false" length="-1" name="_Customer_Type_ID_" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="41" name="_Customer_Type_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="_Customer_Group_ID_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="28" name="_Customer_Group_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables sizeState="INTERMEDIATE" name="Var">
+        <mapperTableEntries name="customer_type_id" expression="Integer.parseInt(  StringHandling.SUBSTR&#xD;&#xA;&#x9; (row1._Customer_Type_ID_, 0 , row1._Customer_Type_ID_.indexOf(&quot;,&quot;)  ) ) " type="id_Integer"/>
+      </varTables>
+      <outputTables sizeState="INTERMEDIATE" name="customer_type">
+        <mapperTableEntries name="_Customer_Type_ID_" expression="Var.customer_type_id " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="_Customer_Type_" expression="row1._Customer_Type_ " type="id_String" nullable="true"/>
+        <mapperTableEntries name="_Customer_Group_ID_" expression="row1._Customer_Group_ID_ " type="id_String" nullable="true"/>
+        <mapperTableEntries name="_Customer_Group_" expression="row1._Customer_Group_ " type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="_Customer_Type_ID_" type="id_String" nullable="true"/>
+        <mapperTableEntries name="_Customer_Type_" type="id_String" nullable="true"/>
+        <mapperTableEntries name="_Customer_Group_ID_" type="id_String" nullable="true"/>
+        <mapperTableEntries name="_Customer_Group_" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="960" posY="384">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_Kj2e4DPqEe-fbLVDKLaNlg" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_8"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="MYSQL" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="context.DB_orion_Server"/>
+    <elementParameter field="TEXT" name="PORT" value="context.DB_orion_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.DB_orion_Database"/>
+    <elementParameter field="TEXT" name="USER" value="context.DB_orion_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:OxCOIp9FHGEiuHyzy1s7NIXToUTfTcNKoo9IyIJAsZsllyK5BoijoMC+4Q11RFBXUvzqjc0="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;Customer_Dim&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CLEAR"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_FLOW:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_FLOW:REPOSITORY_SCHEMA_TYPE" value="_Kj2e4DPqEe-fbLVDKLaNlg - Customer_Dim" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="mysql_id" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.DB_orion_AdditionalParams"/>
+    <elementParameter field="CHECK" name="EXTENDINSERT" value="true"/>
+    <elementParameter field="LABEL" name="NOTE" value="(Not compatible with reject links)"/>
+    <elementParameter field="TEXT" name="NB_ROWS_PER_INSERT" value="100"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true" show="false"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Customer_ID"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Customer_Country"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Customer_Group"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Customer_Type"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Customer_Gender"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Customer_Age_Group"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Customer_Age"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Customer_Name"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Customer_Fisrtname"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Customer_Lastname"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Customer_Birth_Date"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="USE_HINT_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="HINT_OPTIONS" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="ON_DUPLICATE_KEY_UPDATE" value="false"/>
+    <elementParameter field="TABLE" name="DUPLICATED_KEYS" show="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="Customer_Dim" name="tDBOutput_1">
+      <column comment="" key="true" length="10" name="Customer_ID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2" name="Customer_Country" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="40" name="Customer_Group" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="40" name="Customer_Type" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="Customer_Gender" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="12" name="Customer_Age_Group" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="Customer_Age" nullable="true" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="40" name="Customer_Name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="Customer_Fisrtname" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="Customer_Lastname" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="Customer_Birth_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+    <metadata connector="REJECT" label="Customer_Dim" name="REJECT">
+      <column comment="" key="true" length="10" name="Customer_ID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2" name="Customer_Country" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="40" name="Customer_Group" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="40" name="Customer_Type" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="Customer_Gender" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="12" name="Customer_Age_Group" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="Customer_Age" nullable="true" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="40" name="Customer_Name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="Customer_Fisrtname" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="Customer_Lastname" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="Customer_Birth_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="928" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_1" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="_Customer_ID_"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_Country_"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_Customer_Group_"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_Customer_Type_"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_Gender_"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Age_group"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Age"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_Customer_Name_"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_Customer_FirstName_"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_Customer_LastName_"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Birth_date"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_1">
+      <column comment="" key="true" length="5" name="_Customer_ID_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="_Country_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="28" name="_Customer_Group_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="41" name="_Customer_Type_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="_Gender_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Age_group" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Age" nullable="false" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="33" name="_Customer_Name_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="_Customer_FirstName_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="24" name="_Customer_LastName_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Birth_date" nullable="false" pattern="" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tMap_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="customer" lineStyle="0" metaname="customer" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tMap_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="customer" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="output_bd" lineStyle="0" metaname="output_bd" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_3" target="tDBOutput_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="output_bd" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="customer_dim" lineStyle="0" metaname="customer_dim" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_3" target="tLogRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="customer_dim" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputDelimited_4" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_4" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="customer_type" lineStyle="8" metaname="customer_type" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tMap_3">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="_Customer_Group_ID_"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="_Customer_Type_"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="_Customer_Group_"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="customer_type" show="false"/>
+  </connection>
+  <note opaque="true" posX="128" posY="0" sizeHeight="64" sizeWidth="737" text="Ce Job permet de récupérer deux fichiers CSV (customer.csv et customer_type.csv) &#xD;&#xA;puis de les joindre et stocker le résultat entant que la dimenssion 'Customer' dans un entrepot de données (MYSQL)  "/>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>

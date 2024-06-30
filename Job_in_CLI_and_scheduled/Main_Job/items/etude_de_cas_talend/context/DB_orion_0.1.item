@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_1YDgADbdEe-Wmon6yxRYqQ" confirmationNeeded="false" name="Default">
+    <contextParameter xmi:id="_1YDgATbdEe-Wmon6yxRYqQ" comment="" name="DB_orion_Port" prompt="DB_orion_Port?" promptNeeded="false" type="id_String" value="3306"/>
+    <contextParameter xmi:id="_1YDgAjbdEe-Wmon6yxRYqQ" comment="" name="DB_orion_Password" prompt="DB_orion_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:VjEJvkUc//GuNMn8YyV97UmR6S77ISBDj62WGRMQ5jFG1WLwBA=="/>
+    <contextParameter xmi:id="_1YDgAzbdEe-Wmon6yxRYqQ" comment="" name="DB_orion_Database" prompt="DB_orion_Database?" promptNeeded="false" type="id_String" value="Orion_db"/>
+    <contextParameter xmi:id="_1YDgBDbdEe-Wmon6yxRYqQ" comment="" name="DB_orion_Server" prompt="DB_orion_Server?" promptNeeded="false" type="id_String" value="localhost"/>
+    <contextParameter xmi:id="_1YDgBTbdEe-Wmon6yxRYqQ" comment="" name="DB_orion_AdditionalParams" prompt="DB_orion_AdditionalParams?" promptNeeded="false" type="id_String" value="noDatetimeStringSync=true"/>
+    <contextParameter xmi:id="_1YDgBjbdEe-Wmon6yxRYqQ" comment="" name="DB_orion_Login" prompt="DB_orion_Login?" promptNeeded="false" type="id_String" value="root"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_1YDgBzbdEe-Wmon6yxRYqQ" confirmationNeeded="false" name="Prod">
+    <contextParameter xmi:id="_1YDgCDbdEe-Wmon6yxRYqQ" comment="" name="DB_orion_Port" prompt="DB_orion_Port?" promptNeeded="false" type="id_String" value="3306"/>
+    <contextParameter xmi:id="_1YDgCTbdEe-Wmon6yxRYqQ" comment="" name="DB_orion_Password" prompt="DB_orion_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:+/J1usWP/cAoyqfexpXPE1HLm2DO/yTREp3tWauaGAsKAzGRcA=="/>
+    <contextParameter xmi:id="_1YDgCjbdEe-Wmon6yxRYqQ" comment="" name="DB_orion_Database" prompt="DB_orion_Database?" promptNeeded="false" type="id_String" value="Orion_db"/>
+    <contextParameter xmi:id="_1YDgCzbdEe-Wmon6yxRYqQ" comment="" name="DB_orion_Server" prompt="DB_orion_Server?" promptNeeded="false" type="id_String" value="container_edc_PMN_talend:3306"/>
+    <contextParameter xmi:id="_1YDgDDbdEe-Wmon6yxRYqQ" comment="" name="DB_orion_AdditionalParams" prompt="DB_orion_AdditionalParams?" promptNeeded="false" type="id_String" value="noDatetimeStringSync=true"/>
+    <contextParameter xmi:id="_1YDgDTbdEe-Wmon6yxRYqQ" comment="" name="DB_orion_Login" prompt="DB_orion_Login?" promptNeeded="false" type="id_String" value="root"/>
+  </talendfile:ContextType>
+</xmi:XMI>

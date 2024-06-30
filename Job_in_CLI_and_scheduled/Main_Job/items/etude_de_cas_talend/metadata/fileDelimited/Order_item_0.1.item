@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_IB5yoDGREe-pvu-skiTgKw" name="Order_item" id="_IBrwMDGREe-pvu-skiTgKw" dataPackage="_IB5yoTGREe-pvu-skiTgKw" Server="Localhost 127.0.0.1" FilePath="/ETUDE_DE_CAS_TALEND/Data/order_item.txt" Format="WINDOWS" Encoding="US-ASCII" FieldSeparatorValue="&quot;;&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" EscapeType="CSV" TextEnclosure="&quot;\&quot;&quot;" CsvOption="true"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_IB5yoTGREe-pvu-skiTgKw" name="default" dataManager="_IB5yoDGREe-pvu-skiTgKw">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_IB5yojGREe-pvu-skiTgKw" id="_HnmRsDGQEe-pvu-skiTgKw" label="Order_item">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_IB5yozGREe-pvu-skiTgKw" label="Order_ID" length="13" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_IB5ypDGREe-pvu-skiTgKw" label="Order_Item_Num" length="4" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_IB5ypTGREe-pvu-skiTgKw" label="Product_ID" length="15" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_IB5ypjGREe-pvu-skiTgKw" label="Quantity" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_IB5ypzGREe-pvu-skiTgKw" label="Total_Retail_Price" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_IB5yqDGREe-pvu-skiTgKw" label="CostPrice_Per_Unit" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_IB5yqTGREe-pvu-skiTgKw" label="Discount" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>
