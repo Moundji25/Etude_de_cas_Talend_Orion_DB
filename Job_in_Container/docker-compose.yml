@@ -1,0 +1,26 @@
+version: '3.8'
+services:
+  mysql_:
+    image: mysql:latest
+    container_name: container_edc_PMN_talend
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: groupesix
+      MYSQL_DATABASE: Orion_db
+    volumes:
+      - ./schema.sql:/docker-entrypoint-initdb.d/schema.sql
+    networks:
+      - mysql_network
+
+  talend_job:
+     image: talend-job:latest
+     container_name: talend-job
+     depends_on:
+       - mysql_
+     networks:
+       - mysql_network
+
+networks:
+  mysql_network:
+    driver: bridge
