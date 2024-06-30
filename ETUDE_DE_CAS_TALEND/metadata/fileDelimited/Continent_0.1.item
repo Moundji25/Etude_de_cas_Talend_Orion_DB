@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_Dlc0QTF3Ee-kM7ZxInksBg" name="Continent" dataPackage="_Dlc0QjF3Ee-kM7ZxInksBg" Server="Localhost 127.0.0.1" FilePath="C:/Users/Poundji/Downloads/Etudes_de_cas_Talend/Data/continent.txt" Format="WINDOWS" Encoding="US-ASCII" FieldSeparatorValue="&quot;;&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" EscapeType="CSV" TextEnclosure="&quot;\&quot;&quot;" CsvOption="true"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_Dlc0QjF3Ee-kM7ZxInksBg" name="default" dataManager="_Dlc0QTF3Ee-kM7ZxInksBg">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_Dlc0QzF3Ee-kM7ZxInksBg" id="_-3tSwDF2Ee-kM7ZxInksBg" label="Continent">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Dlc0RDF3Ee-kM7ZxInksBg" label="Continent_ID" length="5" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Dlc0RTF3Ee-kM7ZxInksBg" label="Continent_Name" length="17" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

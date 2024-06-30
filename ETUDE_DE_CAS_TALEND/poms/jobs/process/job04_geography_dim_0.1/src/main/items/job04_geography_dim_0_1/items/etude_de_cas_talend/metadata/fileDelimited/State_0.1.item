@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_rnQVwTF2Ee-kM7ZxInksBg" name="State" dataPackage="_rnQVwjF2Ee-kM7ZxInksBg" Server="Localhost 127.0.0.1" FilePath="C:/Users/Poundji/Downloads/Etudes_de_cas_Talend/Data/state.txt" Format="WINDOWS" Encoding="US-ASCII" FieldSeparatorValue="&quot;;&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" EscapeType="CSV" TextEnclosure="&quot;\&quot;&quot;" CsvOption="true"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_rnQVwjF2Ee-kM7ZxInksBg" name="default" dataManager="_rnQVwTF2Ee-kM7ZxInksBg">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_rnQ80DF2Ee-kM7ZxInksBg" id="_kicPMDF2Ee-kM7ZxInksBg" label="State">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_rnQ80TF2Ee-kM7ZxInksBg" label="State_ID" length="10" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_rnQ80jF2Ee-kM7ZxInksBg" label="State_Type" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_rnQ80zF2Ee-kM7ZxInksBg" label="State_Code" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_rnQ81DF2Ee-kM7ZxInksBg" label="State_Name" length="3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_rnQ81TF2Ee-kM7ZxInksBg" label="Country" length="2" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>
